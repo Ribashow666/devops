@@ -1,0 +1,20 @@
+{
+  "name": "projeto-devops-melo",
+  "version": "1.0.0",
+  "description": "readme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run docker:detached && node ./index.js",
+    "docker:up": "docker compose -f compose.yaml up",
+    "docker:down": "docker compose -f compose.yaml down",
+    "docker:stop": "docker compose -f compose.yaml stop",
+    "docker:detached": "docker compose -f compose.yaml up -d",
+    "docker:recreate": "docker compose -f compose.yaml up -d --force-recrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  }
+}
