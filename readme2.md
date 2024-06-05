@@ -1,0 +1,1 @@
+como usa o zabbix meu deus do ceu
